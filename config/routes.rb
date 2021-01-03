@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 root 'pages#home'
 get 'about', to: 'pages#about'
-resources :articles, only: [:show, :index]
+# get 'edit', to: 'pages#edit' #i attempted this line
+resources :articles
+
 
 end
